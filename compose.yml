@@ -1,5 +1,6 @@
 services:
   manager:
+    container_name: newscentr-manager
     env_file:
       - .env
     build:

@@ -1,5 +1,6 @@
 FROM node:20-alpine AS base
-RUN apk add --no-cache openssl
+
+RUN yarn config set network-timeout 600000 -g
 
 # Install dependencies only when needed
 FROM base AS deps

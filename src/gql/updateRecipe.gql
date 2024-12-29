@@ -1,0 +1,26 @@
+mutation updateRecipe($recipe:RecipeUpdate!){
+  updateRecipe(recipe:$recipe) {
+    id
+    pageName
+    pageTitle
+    url
+    text
+    createdAt
+    updatedAt
+    isPublish
+    recipeCategoryId
+    keywords
+    description
+    previewId
+    previewAlt
+    previewTitle
+    activeCookingTime
+    totalCookingTime
+    ingredients {
+      id
+      ingredientId
+      value
+      note
+    }
+  } 
+}

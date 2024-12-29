@@ -1,0 +1,10 @@
+query getRecipeCategory {
+  getRecipeCategory {
+    id
+    name  
+    url
+    parentId
+    keywords
+    description
+  }
+}

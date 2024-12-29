@@ -1,0 +1,6 @@
+mutation createFolder($folder:FolderCreate!){
+  createFolder(folder:$folder) {
+    name
+    id
+  } 
+}

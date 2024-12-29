@@ -1,0 +1,3 @@
+query checkRecoveryToken($token: String!){
+  checkRecoveryToken(token:$token)
+}

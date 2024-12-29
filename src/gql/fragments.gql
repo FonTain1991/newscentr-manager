@@ -1,0 +1,16 @@
+fragment IngredientList on Ingredient {
+  id
+  title
+  parentId
+}
+
+fragment Ingredient on Ingredient {
+  id
+  previewId        
+  previewAlt       
+  previewTitle     
+  iconId           
+  title            
+  description      
+  parentId         
+}

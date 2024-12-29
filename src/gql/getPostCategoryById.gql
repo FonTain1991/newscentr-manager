@@ -1,0 +1,11 @@
+query getPostCategoryById($id:String!) {
+  getPostCategoryById(id:$id) {
+    id
+    name  
+    url
+    parentId
+    keywords
+    description
+    text
+  }
+}

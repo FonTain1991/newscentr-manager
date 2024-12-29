@@ -1,0 +1,6 @@
+query getRecipes {
+  getRecipes {
+    id
+    pageName
+  }
+}

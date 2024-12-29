@@ -1,0 +1,11 @@
+mutation updateRecipeCategory($category:RecipeCategoryUpdate!){
+  updateRecipeCategory(category:$category) {
+    name
+    id
+    url
+    description
+    keywords
+    parentId
+    text
+  } 
+}

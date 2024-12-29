@@ -1,0 +1,9 @@
+services:
+  manager:
+    env_file:
+      - .env
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - "${PORT}:${PORT}"

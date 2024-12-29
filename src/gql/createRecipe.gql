@@ -1,0 +1,20 @@
+mutation createRecipe($recipe:RecipeCreate!){
+  createRecipe(recipe:$recipe) {
+    id
+    pageName
+    pageTitle
+    url
+    text
+    createdAt
+    updatedAt
+    isPublish
+    recipeCategoryId
+    keywords
+    description
+    previewId
+    previewAlt
+    previewTitle
+    activeCookingTime
+    totalCookingTime
+  } 
+}

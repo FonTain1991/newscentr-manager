@@ -1,0 +1,1 @@
+export const SIDEBAR_MENU_BG = '#242729'

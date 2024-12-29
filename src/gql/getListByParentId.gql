@@ -1,0 +1,9 @@
+query getListByParentId($parentId:String) {
+  getListByParentId(parentId:$parentId) {
+    id
+    name
+    parentId
+    value
+    type
+  }
+}

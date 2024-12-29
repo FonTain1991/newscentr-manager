@@ -1,0 +1,18 @@
+mutation updatePost($post:PostUpdate!){
+  updatePost(post:$post) {
+    id
+    pageName
+    pageTitle
+    url
+    text
+    createdAt
+    updatedAt
+    isPublish
+    postCategoryId
+    keywords
+    description
+    previewId
+    previewAlt
+    previewTitle
+  } 
+}

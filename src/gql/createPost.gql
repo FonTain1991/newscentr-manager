@@ -1,0 +1,18 @@
+mutation createPost($post:PostCreate!){
+  createPost(post:$post) {
+    id
+    pageName
+    pageTitle
+    url
+    text
+    createdAt
+    updatedAt
+    isPublish
+    postCategoryId
+    keywords
+    description
+    previewId
+    previewAlt
+    previewTitle
+  } 
+}

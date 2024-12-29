@@ -1,0 +1,5 @@
+mutation createIngredient($ingredient:IngredientCreate!){
+  createIngredient(ingredient:$ingredient) {
+    ...Ingredient
+  } 
+}

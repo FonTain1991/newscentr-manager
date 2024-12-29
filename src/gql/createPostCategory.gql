@@ -1,0 +1,5 @@
+mutation createPostCategory($category:PostCategoryCreate!){
+  createPostCategory(category:$category) {
+    name
+  } 
+}

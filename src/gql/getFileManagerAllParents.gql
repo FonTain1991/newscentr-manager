@@ -1,0 +1,6 @@
+query getFileManagerAllParents($parentId:String) {
+  getFileManagerAllParents(parentId:$parentId) {
+    name
+    id
+  }
+}

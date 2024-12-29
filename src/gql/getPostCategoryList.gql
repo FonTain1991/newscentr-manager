@@ -1,0 +1,10 @@
+query getPostCategory {
+  getPostCategory {
+    id
+    name  
+    url
+    parentId
+    keywords
+    description
+  }
+}

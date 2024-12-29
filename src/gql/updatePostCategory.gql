@@ -1,0 +1,11 @@
+mutation updatePostCategory($category:PostCategoryUpdate!){
+  updatePostCategory(category:$category) {
+    name
+    id
+    url
+    description
+    keywords
+    parentId
+    text
+  } 
+}

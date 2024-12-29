@@ -1,0 +1,18 @@
+query getPostById($id:String!) {
+  getPostById(id:$id) {
+    id
+    pageName
+    pageTitle
+    url
+    text
+    createdAt
+    updatedAt
+    isPublish
+    postCategoryId
+    keywords
+    description
+    previewId
+    previewAlt
+    previewTitle
+  }
+}

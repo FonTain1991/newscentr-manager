@@ -45,7 +45,7 @@ export const CategoryList = memo((props: IRubricList) => {
       onSearch={setSearchText}
       searchValue={searchText}
       extra={<TotalResult text={dataSource?.length} />}
-      textNewAction='Новая категория'
+      textNewAction='Новая рубрика'
     >
       <Table
         columns={columns}

@@ -1,5 +1,0 @@
-mutation updateIngredient($ingredient:IngredientUpdate!){
-  updateIngredient(ingredient:$ingredient) {
-    ...Ingredient
-  } 
-}

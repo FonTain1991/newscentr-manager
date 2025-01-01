@@ -12,7 +12,7 @@ export const CategoryPostList = memo(() => {
 
   return (
     <CategoryList
-      title='Категория. Блог'
+      title='Рубрики'
       linkToCreatePage='/category-post/add'
       dataSource={postCategory ?? []}
     />

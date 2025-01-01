@@ -3,7 +3,8 @@
 import { useMeSuspenseQuery } from '@/gql/me'
 
 export default function DashboardPage() {
-  useMeSuspenseQuery()
+  const { data } = useMeSuspenseQuery()
+  console.log(data)
   return (
     <div>Dashboard</div>
   )

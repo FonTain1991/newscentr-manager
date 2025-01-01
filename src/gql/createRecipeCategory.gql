@@ -1,5 +1,0 @@
-mutation createRecipeCategory($category:RecipeCategoryCreate!){
-  createRecipeCategory(category:$category) {
-    name
-  } 
-}

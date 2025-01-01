@@ -1,17 +1,14 @@
 
 import { SIDEBAR_MENU_BG } from '@/constants/colors'
-import { AppstoreOutlined, BookOutlined, FolderOutlined, GlobalOutlined, HomeOutlined, OneToOneOutlined } from '@ant-design/icons'
+import { BookOutlined, FolderOutlined, HomeOutlined } from '@ant-design/icons'
 import { ConfigProvider, Menu, MenuProps } from 'antd'
 import Link from 'next/link'
 import { FC, createElement, memo } from 'react'
 
 const items: MenuProps['items'] = [
   { icon: HomeOutlined, title: 'Панель управления', href: '/' },
-  { icon: FolderOutlined, title: 'Категории. Блог', href: '/category-post' },
-  { icon: FolderOutlined, title: 'Категории. Рецепты', href: '/category-recipe' },
-  { icon: BookOutlined, title: 'Блог', href: '/posts' },
-  { icon: OneToOneOutlined, title: 'Рецепты', href: '/recipes' },
-  { icon: AppstoreOutlined, title: 'Ингредиенты', href: '/ingredients' }
+  { icon: FolderOutlined, title: 'Рубрики', href: '/category-post' },
+  { icon: BookOutlined, title: 'Посты', href: '/posts' }
 ].map((item, index) => ({
   key: String(index + 1),
   icon: createElement(item.icon),

@@ -1,6 +1,6 @@
 'use client'
 
-import { USER_NOT_FOUND } from '@/constants/errors'
+import { UNAUTHORIZED, USER_NOT_FOUND } from '@/constants/errors'
 import { useSignInMutation } from '@/gql/signIn'
 import { useEvent } from '@/hooks/useEvent'
 import { Button, Form, Input, notification } from 'antd'
@@ -21,13 +21,12 @@ export const AuthForm = memo(() => {
 
   const onFinish = useEvent(async variables => {
     try {
-      console.log(variables)
       const { data } = await signIn({ variables })
       if (data?.signIn) {
         location.replace('/dashboard')
       }
     } catch (error) {
-      if (error instanceof Error && error?.message === USER_NOT_FOUND) {
+      if (error instanceof Error && [USER_NOT_FOUND, UNAUTHORIZED].includes(error?.message)) {
         api.error({
           message: 'Внимание',
           description: 'Пользователь не найден',

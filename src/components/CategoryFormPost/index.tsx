@@ -32,7 +32,7 @@ export const CategoryFormPost = memo(() => {
       })
       notification.success({
         message: 'Внимание',
-        description: 'Категория успешна сохранена',
+        description: 'Рубрика успешна сохранена',
         placement: 'topRight'
       })
 
@@ -64,7 +64,7 @@ export const CategoryFormPost = memo(() => {
           loading={loading}
           disabled={loading}
           type='primary'
-          children={postCategory?.id ? 'Сохранить категорию' : 'Добавить категорию'}
+          children={postCategory?.id ? 'Сохранить рубрику' : 'Добавить рубрику'}
           onClick={form.submit}
         />
       )}

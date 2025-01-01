@@ -1,5 +1,0 @@
-query getIngredientById($id:String!) {
-  getIngredientById(id:$id) {
-    ...Ingredient
-  }
-}
